@@ -91,7 +91,7 @@ class Main(QWidget, FORM_CLASS):
         self.labelImageOut.setPixmap(QPixmap(qImg).scaled(w, h))           #show output image inside the GUI
 
     def GetImageFile(self):
-        file_name, _ = QFileDialog.getOpenFileName(self , 'Open Image File',r"C:\\Users\\m_rab\\Desktop\\","Image files (*.jpg *.jpeg *.png)")      #Upload the photo from file system
+        file_name, _ = QFileDialog.getOpenFileName(self , 'Open Image File',r"C:\\Users\\user\\Desktop\\","Image files (*.jpg *.jpeg *.png)")      #Upload the photo from file system
         self.name = file_name      #have variable holding the path of the input image
         w = self.labelImageIn.width()
         h = self.labelImageIn.height()
